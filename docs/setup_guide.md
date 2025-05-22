@@ -14,7 +14,7 @@ Make sure you have the following installed:
 
 ```bash
 git clone https://github.com/your-username/big_data_project.git
-cd big_data_project
+cd big_data_project ```
   ## Step 2: Start Docker Cluster
 docker-compose up -d
 
