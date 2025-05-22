@@ -11,21 +11,20 @@ Make sure you have the following installed:
 - 8 GB RAM or more recommended
 
   ## Step 1: Clone the Repository
-  ```bash
-git clone https://github.com/iamahmedhisham/big_data_project.git
-cd big_data_project
+ git clone https://github.com/iamahmedhisham/big_data_project.git
+ cd big_data_project
   ## Step 2: Start Docker Cluster
 docker-compose up -d
 
 This starts the following services:
-namenode, datanode — for HDFS
-spark-master, spark-worker — for PySpark
-hive-server, hive-metastore — for Hive queries
-Wait until all containers are up (docker ps to check).
+ namenode, datanode — for HDFS
+ spark-master, spark-worker — for PySpark
+ hive-server, hive-metastore — for Hive queries
+ Wait until all containers are up (docker ps to check).
 
   ## Step 3: Copy MIMIC-III Data into HDFS
   On Windows: 
-  scripts\copy_to_hdfs.bat
+    scripts\copy_to_hdfs.bat
   ## Step 4: Run PySpark Script to Clean and Convert Data
   docker exec -it spark-master bash
 /spark/bin/spark-submit --master spark://spark-master:7077 /path/to/clean_admissions.py
