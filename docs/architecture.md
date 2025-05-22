@@ -1,4 +1,4 @@
-![ChatGPT Image May 23, 2025, 12_43_16 AM](https://github.com/user-attachments/assets/a830e366-7169-4b75-a988-607074ee3f1f)# Big Data Pipeline Architecture for MIMIC-III
+# Big Data Pipeline Architecture for MIMIC-III
 
 This project uses Docker to simulate a distributed data processing pipeline using:
 - Hadoop HDFS for storage
