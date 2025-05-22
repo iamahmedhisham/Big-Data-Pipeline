@@ -17,10 +17,14 @@ Make sure you have the following installed:
 docker-compose up -d
 
 This starts the following services:
- namenode, datanode — for HDFS
- spark-master, spark-worker — for PySpark
- hive-server, hive-metastore — for Hive queries
- Wait until all containers are up (docker ps to check).
+
+namenode, datanode — for HDFS
+
+spark-master, spark-worker — for PySpark
+
+hive-server, hive-metastore — for Hive queries
+
+Wait until all containers are up (docker ps to check).
 
   ## Step 3: Copy MIMIC-III Data into HDFS
   On Windows: 
