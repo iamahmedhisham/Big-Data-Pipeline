@@ -10,9 +10,11 @@ Make sure you have the following installed:
 - (Optional) [DBeaver](https://dbeaver.io/) — for GUI Hive queries via Beeline
 - 8 GB RAM or more recommended
 
-  ## Step 1: Clone the Repository
- git clone https://github.com/iamahmedhisham/big_data_project.git
-  cd big_data_project
+## Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/your-username/big_data_project.git
+cd big_data_project
   ## Step 2: Start Docker Cluster
 docker-compose up -d
 
