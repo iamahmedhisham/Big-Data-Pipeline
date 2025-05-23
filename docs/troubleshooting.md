@@ -15,14 +15,14 @@ Run docker ps -a to check failed containers
 Try docker system prune -a to free up space
 
 Restart Docker Desktop
-❌ HDFS file not found
+## HDFS file not found
 Fix:
 
 Make sure copy_to_hdfs.bat was run successfully
 
 Double-check the local folder path you entered
 
-❌ Spark job fails: "File not found"
+## Spark job fails: "File not found"
 Fix:
 
 Ensure the file exists on HDFS (hdfs dfs -ls /)
@@ -32,7 +32,7 @@ Check spelling and case in path names
 Try viewing logs with:
 docker logs spark-master
 
-❌ Beeline/DBeaver cannot connect to Hive
+##  Beeline/DBeaver cannot connect to Hive
 Fix:
 
 Confirm Hive container is running:
