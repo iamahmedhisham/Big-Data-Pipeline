@@ -22,7 +22,7 @@ This project uses Docker to simulate a distributed data processing pipeline usin
 ### 2. **Data Cleansing with PySpark**
 - Each table (ADMISSIONS, PATIENTS, etc.) is processed:
   - Remove nulls and invalid rows
-  - Normalize values (e.g., gender, diagnosis)
+  - Normalize values (e.g., gender, diagnosis) 
   - Convert formats (e.g., dates, timestamps)
   - Write as Parquet files to `/clinical_db_transformed/` in HDFS
 
