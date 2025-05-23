@@ -6,8 +6,8 @@ SELECT
     
     COUNT(*) AS admission_count
     
-FROM admissions
-
-GROUP BY DATE_FORMAT(admittime, 'yyyy-MM-dd')
-
-ORDER BY admission_date;
+    FROM admissions
+    
+    GROUP BY DATE_FORMAT(admittime, 'yyyy-MM-dd')
+    
+    ORDER BY admission_date;
