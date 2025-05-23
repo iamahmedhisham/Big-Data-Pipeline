@@ -4,7 +4,6 @@ This document outlines common problems and how to fix them.
 
 ## Docker won't start containers
 
-```bash
 docker-compose up -d
 
 Issue: Nothing happens or some services fail.
