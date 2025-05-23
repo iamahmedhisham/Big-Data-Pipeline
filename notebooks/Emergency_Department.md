@@ -1,4 +1,4 @@
--- Analyze ED stay duration for admissions with ED data:
+## Analyze ED stay duration for admissions with ED data
 
 
     SELECT 
