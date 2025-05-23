@@ -18,10 +18,11 @@ git clone https://github.com/your-username/big_data_project.git
 
 ## Step 2: Start Docker Cluster
 docker-compose up -d
+
 This starts the following services:
 
-namenode, datanode — for HDFS
+- namenode, datanode — for HDFS
 
-spark-master, spark-worker — for PySpark
+- spark-master, spark-worker — for PySpark
 
-hive-server, hive-metastore — for Hive queries
+- hive-server, hive-metastore — for Hive queries
