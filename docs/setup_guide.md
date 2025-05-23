@@ -26,3 +26,25 @@ This starts the following services:
 - spark-master, spark-worker — for PySpark
 
 - hive-server, hive-metastore — for Hive queries
+
+## Step 3 : Copy MIMIC-III Data into HDFS
+On Windows:
+
+scripts\copy_to_hdfs.bat
+
+## Step 4: Run PySpark Script to Clean and Convert Data
+inside Spark container
+
+docker exec -it spark-master bash
+
+/spark/bin/spark-submit --master spark://spark-master:7077 /path/to/clean_admissions.py
+## Step 5: Access Hive and Build External Tables
+Connect via DBeaver:
+
+Driver: Hive
+
+JDBC URL: jdbc:hive2://localhost:10000
+
+
+
+
