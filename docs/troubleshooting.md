@@ -4,9 +4,8 @@ This document outlines common problems and how to fix them.
 
 ## Docker won't start containers
 
-docker-compose up -d
 
-Issue: Nothing happens or some services fail.
+Issue : Nothing happens or some services fail.
 
 Fix:
 
@@ -16,6 +15,7 @@ Try docker system prune -a to free up space
 
 Restart Docker Desktop
 ## HDFS file not found
+
 Fix:
 
 Make sure copy_to_hdfs.bat was run successfully
@@ -23,6 +23,7 @@ Make sure copy_to_hdfs.bat was run successfully
 Double-check the local folder path you entered
 
 ## Spark job fails: "File not found"
+
 Fix:
 
 Ensure the file exists on HDFS (hdfs dfs -ls /)
@@ -33,6 +34,7 @@ Try viewing logs with:
 docker logs spark-master
 
 ##  Beeline/DBeaver cannot connect to Hive
+
 Fix:
 
 Confirm Hive container is running:
