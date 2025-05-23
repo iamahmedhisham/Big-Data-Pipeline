@@ -2,11 +2,11 @@
 
 SELECT
 
-    hadm_id,
+hadm_id,
     
-    admission_type,
+admission_type,
     
-    (UNIX_TIMESTAMP(dischtime) - UNIX_TIMESTAMP(admittime)) / 3600 AS stay_hours
+(UNIX_TIMESTAMP(dischtime) - UNIX_TIMESTAMP(admittime)) / 3600 AS stay_hours
     
 FROM admissions
 
