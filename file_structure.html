@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentation for Big Data Pipeline using Kafka, Spark, and Cassandra.">
+    <title>Big Data Pipeline Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        nav {
+            background: #34495e;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1.5rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ecf0f1;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        pre {
+            background: #f8f8f8;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 0.9rem;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .diagram {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+        .diagram img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #2c3e50;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Big Data Pipeline</h1>
+        <p>A scalable pipeline for real-time data processing using Apache Kafka, Spark, and Cassandra.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#tech-stack">Tech Stack</a></li>
+            <li><a href="#setup">Setup</a></li>
+            <li><a href="#usage">Usage</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="section" id="overview">
+            <h2>Overview</h2>
+            <p>This project implements a Big Data Pipeline designed to handle streaming data with high throughput and scalability. It simulates real-world use cases such as processing social media feeds or IoT sensor data in real-time.</p>
+            <p>The pipeline ingests data, processes it using distributed frameworks, and stores results for analysis, leveraging containerization for easy deployment.</p>
+        </div>
+
+        <div class="section" id="architecture">
+            <h2>Architecture</h2>
+            <p>The pipeline follows a modular architecture with distinct components for data ingestion, processing, and storage:</p>
+            <ul>
+                <li><strong>Data Source:</strong> Simulates streaming data input.</li>
+                <li><strong>Kafka:</strong> Acts as the message broker for data ingestion.</li>
+                <li><strong>Spark:</strong> Processes data in real-time using streaming capabilities.</li>
+                <li><strong>Cassandra:</strong> Stores processed data for querying and analytics.</li>
+            </ul>
+            <div class="diagram">
+                <!-- Placeholder for architecture diagram -->
+                <img src="path-to-diagram.png" alt="Big Data Pipeline Architecture" placeholder="Insert Architecture Diagram Here">
+                <p><em>Diagram illustrating the flow of data through the pipeline.</em></p>
+            </div>
+        </div>
+
+        <div class="section" id="tech-stack">
+            <h2>Technology Stack</h2>
+            <ul>
+                <li><strong>Apache Kafka:</strong> Distributed streaming platform for data ingestion.</li>
+                <li><strong>Apache Spark:</strong> Unified analytics engine for big data processing.</li>
+                <li><strong>Apache Cassandra:</strong> Distributed NoSQL database for storage.</li>
+                <li><strong>Docker:</strong> Containerization for deployment and scalability.</li>
+                <li><strong>Python:</strong> Used for scripting and data simulation.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="setup">
+            <h2>Setup Instructions</h2>
+            <p>Follow these steps to set up the pipeline on your local machine:</p>
+            <ol>
+                <li>Clone the repository: <code>git clone https://github.com/iamahmedhisham/Big-Data-Pipeline.git</code></li>
+                <li>Ensure Docker and Docker Compose are installed.</li>
+                <li>Navigate to the project directory and run: <code>docker-compose up</code></li>
+                <li>Verify that Kafka, Spark, and Cassandra containers are running.</li>
+            </ol>
+            <p>For detailed setup, refer to the <a href="https://github.com/iamahmedhisham/Big-Data-Pipeline">GitHub repository</a>.</p>
+        </div>
+
+        <div class="section" id="usage">
+            <h2>Usage</h2>
+            <p>To simulate data streaming and processing:</p>
+            <pre><code># Start the data producer (example command)
+python producer.py
+
+# Run Spark job for processing (example command)
+spark-submit spark_processing.py
+</code></pre>
+            <p>Processed data will be stored in Cassandra. Query results using CQL shell:</p>
+            <pre><code>docker exec -it cassandra cqlsh</code></pre>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Big Data Pipeline Project. Documentation inspired by <a href="https://github.com/iamahmedhisham/Big-Data-Pipeline" style="color: white; text-decoration: underline;">GitHub Repo</a>.</p>
+    </footer>
+</body>
+</html>
