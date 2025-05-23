@@ -33,7 +33,7 @@ On Windows:
 scripts\copy_to_hdfs.bat
 
 ## Step 4: Run PySpark Script to Clean and Convert Data
-inside Spark container
+inside Spark container :
 
 docker exec -it spark-master bash
 
